@@ -71,11 +71,15 @@ function part2_sol2(a){
 	}
 }
 
-BEGIN {print "++ AOC2020 DAY1 ++\n" }
+BEGIN {
+	print "++ AOC2020 DAY1 ++\n" 
+}
+
 { #fills the array
 	arr[i++] = $1
 	complementExists[$1] =1 
 }
+
 END {
 	print "Part1: O(n^2):",part1_sol1(arr)
 	print "Part1: O(n*logn):"part1_sol2(arr)
