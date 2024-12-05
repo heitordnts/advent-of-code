@@ -20,8 +20,6 @@ int main(int argc, char *argv[]){
 
 	#define MAX 10000
 	int a[MAX],b[MAX];
-	//if I want to allocate just enough memory, I would have to count the lines of the file
-	// and then allocate the arrays in the heap
 
 	int size=0;
 	while(fscanf(file,"%d %d",&a[size],&b[size]) == 2){
