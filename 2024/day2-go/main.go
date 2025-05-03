@@ -90,7 +90,7 @@ func main() {
 				ans++
 			}
 			//Part 2
-			for i, _ := range nums {
+			for i := range nums {
 				if isReportOkIgnoringIdx(nums, i) {
 					ans2++
 					break
